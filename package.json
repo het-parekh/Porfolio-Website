@@ -24,9 +24,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dbgit": "git push https://github.com/het-parekh/todo-notes-board.git --delete gh-pages && gh-pages-clean",
-    "predeploy": "git add . && git commit -m 'upgrade' && git push https://github.com/het-parekh/todo-notes-board.git development && yarn run build",
-    "deploy": "gh-pages -d build development --repo https://github.com/het-parekh/todo-notes-board.git"
+    "dbgit": "git push https://github.com/het-parekh/Porfolio-Website --delete gh-pages && gh-pages-clean",
+    "predeploy": "git add . && git commit -m 'upgrade' && git push https://github.com/het-parekh/Porfolio-Website development && npm run build",
+    "deploy": "gh-pages -d build development --repo https://github.com/het-parekh/Porfolio-Website"
   },
   "eslintConfig": {
     "extends": [
