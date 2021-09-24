@@ -21,12 +21,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI=false && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "dbgit": "git push https://github.com/het-parekh/Porfolio-Website --delete gh-pages && gh-pages-clean",
-    "predeploy": "git add . && git commit -m 'upgrade' && git push https://github.com/het-parekh/Porfolio-Website && npm run build",
-    "deploy": "gh-pages -d build --repo https://github.com/het-parekh/Porfolio-Website"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
