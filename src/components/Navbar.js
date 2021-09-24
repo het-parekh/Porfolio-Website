@@ -31,7 +31,7 @@ function NavBar() {
       expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? "sticky" : "navbar",expand?"open-nav":"collapsed-nav"}
+      className={`${navColour ? "sticky" : "navbar"} ${expand?"open-nav":"collapsed-nav"}`}
     >
       <Container>
         <Navbar.Brand href="/">
