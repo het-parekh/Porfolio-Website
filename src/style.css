@@ -521,7 +521,7 @@ html,body{
 }
 
 .project_card_img{
-  width:200px!important;
+  max-width:330px!important;
   height: 230px!important;
 }
 
