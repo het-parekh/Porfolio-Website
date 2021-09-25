@@ -521,8 +521,8 @@ html,body{
 }
 
 .project_card_img{
-  width:200px;
-  height: 230px;
+  width:200px!important;
+  height: 230px!important;
 }
 
 .project-card-view {
