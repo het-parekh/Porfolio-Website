@@ -2,16 +2,16 @@ html {
 
   --section-background-color: linear-gradient(
     to bottom left,
-    rgb(204, 153, 255,0.5),
-    rgb(204, 153, 255,0.3)
+    #222,
+    #222
   );
 
   --image-gradient: linear-gradient(
    to bottom left,
-   rgb(204, 153, 255,0.7),
-   rgb(204, 153, 255,0.5)
+   rgb(34, 34, 34),
+   rgb(34, 34, 34)
   );
-  --imp-text-color: #cc0099
+  --imp-text-color: #ff4da6
 
   ;
 }
@@ -36,7 +36,7 @@ html,body{
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: rgb(205,175,236)   ;
+  background-color: #222   ;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -61,18 +61,23 @@ html,body{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #6f42c1;
+  background: #222;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: #fff;
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: #fff;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #fff;
   border-radius: 12px;
 }
 
@@ -86,7 +91,7 @@ html,body{
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: rgb(255, 153, 255,0.2) !important;
+  background-color: rgb(33, 33, 33,0.2) !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -108,7 +113,7 @@ html,body{
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: #fff !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -135,6 +140,7 @@ html,body{
   top: 10px !important;
   transform: rotate(135deg) !important;
   opacity: 0.9 !important;
+  background-color: #222!important;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
@@ -149,6 +155,7 @@ html,body{
   top: 10px !important;
   transform: rotate(-135deg) !important;
   opacity: 0.9 !important;
+  background-color: #222!important;
 }
 
 @media (max-width: 767px) {
@@ -158,7 +165,7 @@ html,body{
     
   }
   .open-nav{
-    background-color:#eeccff!important;
+    background-color:#fff!important;
   }
   .collapsed-nav{
     background-color: transparent!important;
@@ -177,7 +184,7 @@ html,body{
 }
 
 .navbar-nav .nav-link {
-  color: #3d0099 !important;
+  color: #fff !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -189,6 +196,9 @@ html,body{
 @media (max-width: 767px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
+  }
+  .navbar-nav .nav-link{
+    color:#222!important;
   }
 }
 
@@ -211,7 +221,7 @@ html,body{
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #ff4da6;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -268,13 +278,16 @@ html,body{
 }
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 20px !important;
+  border:3px solid #998200 ;
+  width:600px!important;
+  height:360px!important;
 }
 
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-image: var(--image-gradient);
   background-position: top center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -285,7 +298,7 @@ html,body{
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: #3d0099;
+  color: #fff;
   text-align: left;
 }
 
@@ -300,23 +313,29 @@ html,body{
 }
 
 .main-name {
-  color: #cc0099 !important  ;
+  color: #ffffb3 !important  ;
   text-shadow:none !important;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #cc0099 !important;
+  color: #ffffb3 !important;
   font-weight: 600 !important;
   text-shadow:none !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #cc0099 !important;
+  color: #ffffb3 !important;
   text-shadow:none !important;
 }
 
 @media (max-width: 767px) {
+
+  .home-header{
+    margin-bottom:0px;
+    border:none;
+  }
+
   .Typewriter__wrapper {
     font-size: 1.4em !important;
     font-weight: 500 !important;
@@ -350,7 +369,7 @@ html,body{
 }
 
 .home-about-description {
-  color: #3d0099 !important;
+  color: #fff !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -425,7 +444,7 @@ html,body{
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #ff4da6;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -449,14 +468,14 @@ html,body{
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: #ff1a8c !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(82, 52, 121,0.5)  ;
+  background-color: #fff  ;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -481,7 +500,7 @@ html,body{
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: #222 !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -526,8 +545,8 @@ html,body{
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px #3d0099 !important;
-  color: #3d0099 !important;
+  box-shadow: 0 4px 5px 3px #fff !important;
+  color: #fff !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
@@ -536,7 +555,7 @@ html,body{
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px #3d0099 !important;
+  box-shadow: 0 4px 4px 5px #fff !important;
 }
 
 .card-img-top {
@@ -561,7 +580,7 @@ html,body{
   box-shadow: none !important;
 }
 .project-heading {
-  color: #3d0099 !important;
+  color: #fff !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -576,8 +595,7 @@ html,body{
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: #3d0099 !important;
-  text-shadow:0.5px 0.5px #3d0099;
+  color: #fff !important;
 }
 
 
@@ -614,7 +632,7 @@ html,body{
 
 .quote-card-view {
   border: none !important;
-  color: #3d0099 !important;
+  color: #fff !important;
   background-color: transparent !important;
 }
 
@@ -637,7 +655,7 @@ html,body{
   padding-top: 110px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: #3d0099 !important;
+  color: #fff !important;
 }
 
 .resume {
@@ -684,7 +702,7 @@ html,body{
   background: #5234795d;
   padding: 8px 15px;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 

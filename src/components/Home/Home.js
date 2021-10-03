@@ -12,6 +12,7 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
+            <div class='rectangle'>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
@@ -26,6 +27,7 @@ function Home() {
                 <Type />
               </div>
             </Col>
+            </div>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img style={{transform:"scale(1.4,1.4)"}} src={homeLogo} alt="home pic" className="img-fluid" />

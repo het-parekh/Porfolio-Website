@@ -18,7 +18,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://github.com/het-parekh"
-                style={{ color: "white" }}
+                style={{ color: "#222" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -29,7 +29,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/het-parekh-87839a1b0/"
-                style={{ color: "white" }}
+                style={{ color: "#222" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -39,7 +39,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="mailto:hetparekh26@gmail.com"
-                style={{ color: "white" }}
+                style={{ color: "#222" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
