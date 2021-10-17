@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {GrMail} from 'react-icons/gr'
-import {AiFillGithub,} from "react-icons/ai";
+import {AiFillGithub,AiFillPhone} from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
@@ -44,6 +44,16 @@ function Footer() {
                 rel="noopener noreferrer"
               >
                 <GrMail />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="tel:+919820260178"
+                style={{ color: "#222" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <AiFillPhone />
               </a>
             </li>
           </ul>

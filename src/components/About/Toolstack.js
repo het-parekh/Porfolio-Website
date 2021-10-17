@@ -5,26 +5,27 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiFirebase, 
-  SiAdobexd
+  SiAdobexd,
+  SiGithub
 } from "react-icons/si";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+      <Col xs={4} md={2} className="tech-icons" title="VScode">
+        <SiVisualstudiocode title="VScode"/>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+      <Col xs={4} md={2} className="tech-icons" title="Postman">
+        <SiPostman title="Postman"/>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAdobexd />
+      <Col xs={4} md={2} className="tech-icons" title="AdobeXD">
+        <SiAdobexd title="AdobeXD"/>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+      <Col xs={4} md={2} className="tech-icons" title="Git">
+        <DiGit title="Git"/>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+      <Col xs={4} md={2} className="tech-icons" title="Github">
+        <SiGithub title="Github"/>
       </Col>
     </Row>
   );

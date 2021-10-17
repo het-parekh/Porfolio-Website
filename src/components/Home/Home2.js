@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.jpg";
 import Tilt from "react-parallax-tilt";
-import {AiFillGithub} from "react-icons/ai";
+import {AiFillGithub,AiFillPhone} from "react-icons/ai";
 import {GrMail} from 'react-icons/gr'
 import { FaLinkedinIn } from "react-icons/fa";
 import { ImPointRight } from "react-icons/im";
@@ -90,6 +90,16 @@ function Home2() {
                   className="icon-colour home-social-icons"
                 >
                   <GrMail />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="tel:+919820260178"
+                  style={{ color: "#222" }}
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillPhone />
                 </a>
               </li>
             </ul>
